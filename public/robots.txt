@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://daily-equation.correia95.workers.dev/sitemap.xml

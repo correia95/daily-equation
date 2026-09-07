@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en-AU">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#2e9e5b" />
+
+    <title>Daily Equation — a maths guessing game (like Wordle for sums)</title>
+    <meta
+      name="description"
+      content="A free daily maths puzzle: guess the hidden 8-tile equation in six tries. One new calculation every day, the same for everyone, playable in your browser with no sign-up. Share your result grid with friends."
+    />
+    <link rel="canonical" href="https://daily-equation.correia95.workers.dev/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Daily Equation — a maths guessing game" />
+    <meta property="og:description" content="Guess the hidden equation in six tries. A new maths puzzle every day, the same for everyone." />
+    <meta property="og:url" content="https://daily-equation.correia95.workers.dev/" />
+    <meta property="og:image" content="https://daily-equation.correia95.workers.dev/og.svg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Daily Equation — a maths guessing game" />
+    <meta name="twitter:description" content="Guess the hidden equation in six tries. A new maths puzzle every day." />
+    <meta name="twitter:image" content="https://daily-equation.correia95.workers.dev/og.svg" />
+
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "VideoGame",
+        "name": "Daily Equation",
+        "url": "https://daily-equation.correia95.workers.dev/",
+        "applicationCategory": "GameApplication",
+        "genre": "Puzzle",
+        "gamePlatform": "Web browser",
+        "operatingSystem": "Any",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "AUD" },
+        "description": "A daily maths word-game: guess the hidden arithmetic equation in six tries."
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How do you play Daily Equation?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "There is one hidden calculation of eight tiles, made from the digits 0 to 9 and the symbols plus, minus, times, divide and equals. You have six guesses. Every guess must itself be a true calculation, for example 12+34=46. After each guess the tiles turn green (right symbol, right place), purple (in the equation but elsewhere) or dark (not in the equation)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is it the same puzzle for everyone?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. The equation is generated from the calendar date, so everyone gets the same puzzle each day and results are comparable. A new one appears at midnight."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What are the maths rules?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Standard order of operations: multiplication and division are resolved before addition and subtraction. Division is always exact, there are no negative numbers, and the value to the right of the equals sign is just the answer."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does it work on a phone?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. It is a mobile-first browser game with an on-screen keypad, no app to install and no account. Your streak is stored only on your device."
+            }
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <noscript>
+      <p style="text-align: center; padding: 20px">
+        Daily Equation is a browser maths puzzle and needs JavaScript enabled. Guess the hidden
+        eight-tile equation (for example 12+34=46) in six tries; a new puzzle appears every day.
+      </p>
+    </noscript>
+  </body>
+</html>
