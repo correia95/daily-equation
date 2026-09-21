@@ -272,3 +272,17 @@ body {
 @media (prefers-reduced-motion: reduce) {
   .cell.reveal, .cell.filled, .grid.shake { animation: none; }
 }
+
+/* a11y-contrast-fixes (auto, WCAG AA 4.5:1) */
+@media (prefers-color-scheme: light) {
+  .cell.m-correct { color: #0b0b0f; }
+  .key.m-correct { color: #0b0b0f; }
+  .share { color: #0b0b0f; }
+}
+@media (prefers-color-scheme: dark) {
+  .cell.m-correct { color: #0b0b0f; }
+  .cell.m-present { color: #0b0b0f; }
+  .key.m-correct { color: #0b0b0f; }
+  .key.m-present { color: #0b0b0f; }
+  .share { color: #0b0b0f; }
+}
